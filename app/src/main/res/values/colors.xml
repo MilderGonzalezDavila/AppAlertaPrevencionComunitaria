@@ -2,4 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="color_fondo">#101922</color>
+    <color name="color_primario">#e0e1e4</color>
+    <color name="color_secundario">#8C8C8C</color>
+    <color name="color_terceario"></color>
+    <color name="boton_primario">#137fec</color>
+    <color name="boton_secondario">#1e2a35</color>
+    <color name="boton_terceario">#102b48</color>
 </resources>
