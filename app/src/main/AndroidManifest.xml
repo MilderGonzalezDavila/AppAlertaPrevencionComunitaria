@@ -18,6 +18,15 @@
             android:name=".Activity_Panico"
             android:exported="false" />
         <activity
+            android:name=".ActivityRecuperarClave"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityRegistrarse"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityIniciarSesion"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true" >
             <intent-filter>
