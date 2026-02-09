@@ -127,7 +127,7 @@
                 style="@style/EstiloTextoDescripcion"
                 android:text="Recibe alertas en tiempo real y conecta con tus vecinos antes cualquier emergencia"
                 android:textAlignment="center"
-                android:textSize="14dp"/>
+                android:textSize="14sp"/>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnIniciarSesion"
@@ -148,6 +148,13 @@
                 android:textAllCaps="false"/>
         </LinearLayout>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="v1.0 Confianza y Seguridad"
+            android:layout_gravity="center"
+            android:textColor="@color/gris_slate_500"
+            android:textSize="12sp"/>
     </LinearLayout>
 
 
