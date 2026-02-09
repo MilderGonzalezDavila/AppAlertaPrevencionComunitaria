@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AppAlertaPrevencionComunitaria</string>
+    <string name="desc_menu_principal">Abrir menú principal</string>
+    <string name="desc_configuracion">Configuración</string>
 </resources>

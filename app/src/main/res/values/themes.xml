@@ -7,4 +7,82 @@
     </style>
 
     <style name="Theme.AppAlertaPrevencionComunitaria" parent="Base.Theme.AppAlertaPrevencionComunitaria" />
+
+    <style name="EstiloTituloGigante">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">@color/gris_slate_900</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">-0.02</item> </style>
+
+    <style name="EstiloTituloSeccion">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/gris_slate_900</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="EstiloTextoDescripcion">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/gris_slate_500</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="EstiloTextoPequeno">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/gris_slate_400</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="EstiloBotonPrimario" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/primario</item>
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">12dp</item> <item name="android:minHeight">56dp</item> <item name="elevation">8dp</item> </style>
+
+    <style name="EstiloBotonSOS" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/emergencia_sos</item>
+        <item name="android:textColor">@color/blanco</item>
+        <item name="cornerRadius">100dp</item> <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="elevation">12dp</item>
+        <item name="rippleColor">@color/emergencia_sos_hover</item>
+    </style>
+
+    <style name="EstiloBotonSecundario" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/gris_slate_900</item>
+        <item name="strokeColor">@color/gris_slate_200</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="backgroundTint">@color/blanco</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:minHeight">56dp</item>
+    </style>
+
+    <style name="EstiloChipAlerta">
+        <item name="chipBackgroundColor">@color/blanco</item>
+        <item name="chipStrokeColor">@color/gris_slate_200</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="android:textColor">@color/gris_slate_700</item>
+        <item name="chipCornerRadius">20dp</item>
+    </style>
+
+    <style name="EstiloInputTexto">
+        <item name="android:background">@drawable/fondo_input_borde</item> <item name="android:textColor">@color/gris_slate_900</item>
+        <item name="android:textColorHint">@color/gris_slate_400</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:minHeight">56dp</item>
+    </style>
+
+    <style name="EstiloTarjetaFeed" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/blanco</item>
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="contentPadding">0dp</item>
+        <item name="strokeColor">@color/gris_slate_200</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
 </resources>

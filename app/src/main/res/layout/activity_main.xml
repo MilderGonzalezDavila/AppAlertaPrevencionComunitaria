@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/color_fondo">
+    android:background="@color/fondo_oscuro">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -34,7 +34,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Alerta y Prevención"
-                    android:textColor="@color/color_primario"
+                    android:textColor="@color/white"
                     android:textSize="20dp">
                 </TextView>
 
@@ -42,9 +42,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="COMUNITARIA"
-                    android:textColor="@color/color_secundario"
-                    android:textSize="12dp">
-                </TextView>
+                    android:textColor="@color/white"
+                    android:textSize="16sp"/>
 
             </LinearLayout>
 

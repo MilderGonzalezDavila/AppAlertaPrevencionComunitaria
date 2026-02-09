@@ -2,11 +2,42 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="color_fondo">#101922</color>
-    <color name="color_primario">#e0e1e4</color>
-    <color name="color_secundario">#8C8C8C</color>
-    <color name="color_terceario"></color>
-    <color name="boton_primario">#137fec</color>
-    <color name="boton_secondario">#1e2a35</color>
-    <color name="boton_terceario">#102b48</color>
+    <color name="primario">#137FEC</color>
+    <color name="primario_hover">#2563EB</color>
+    <color name="fondo_claro">#F6F7F8</color>
+    <color name="fondo_oscuro">#101922</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="blanco_traslucido">#E6FFFFFF</color>
+    <color name="alerta_rojo">#EF4444</color>
+    <color name="emergencia_sos">#DC2626</color>
+    <color name="emergencia_sos_hover">#B91C1C</color>
+    <color name="alerta_rojo_suave">#FEF2F2</color>
+    <color name="seguridad_verde">#22C55E</color>
+    <color name="seguridad_verde_oscuro">#16A34A</color>
+    <color name="seguridad_verde_suave">#F0FDF4</color>
+    <color name="mascota_naranja">#FB923C</color>
+    <color name="mascota_naranja_oscuro">#F97316</color>
+    <color name="mascota_naranja_suave">#FFF7ED</color>
+    <color name="verificado_azul">#3B82F6</color>
+    <color name="scroll_barra">#3B4754</color>
+    <color name="scroll_barra_hover">#556677</color>
+    <color name="fondo_tarjeta_oscuro">#1C2127</color>
+    <color name="fondo_boton_oscuro">#283039</color>
+    <color name="fondo_boton_oscuro_hover">#343E4A</color>
+    <color name="borde_oscuro">#2D3642</color>
+    <color name="fondo_seccion_oscuro">#111418</color>
+
+    <color name="gris_slate_50">#F8FAFC</color>
+    <color name="gris_slate_100">#F1F5F9</color>
+    <color name="gris_slate_200">#E2E8F0</color>
+    <color name="gris_slate_400">#94A3B8</color>
+    <color name="gris_slate_500">#64748B</color>
+    <color name="gris_slate_700">#334155</color>
+    <color name="gris_slate_800">#1E293B</color>
+    <color name="gris_slate_900">#0F172A</color>
+
+    <color name="sombra_primaria">#33137FEC</color>
+    <color name="sombra_sos">#80DC2626</color>
+
 </resources>
+

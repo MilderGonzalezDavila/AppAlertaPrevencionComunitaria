@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_claro">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/headerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@color/fondo_claro"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnMenu"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_menu"
+            app:tint="@color/gris_slate_900"
+            android:contentDescription="@string/desc_menu_principal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            style="@style/EstiloTituloSeccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alerta Vecinal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <ImageButton
+            android:id="@+id/btnSettings"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_settings"
+            app:tint="@color/gris_slate_900"
+            android:contentDescription="@string/desc_configuracion"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardMapa"
+        style="@style/EstiloTarjetaFeed"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintTop_toBottomOf="@id/headerContainer">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_mapa_placeholder"
+            android:alpha="0.8"
+            tools:ignore="ContentDescription" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradiente_oscuro_bottom" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:padding="12dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_my_location"
+                app:tint="@color/primario"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Ubicación actual: Av. Reforma 222"
+                android:textColor="@color/blanco"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvTituloEmergencia"
+        style="@style/EstiloTituloGigante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="¿Tienes una emergencia?"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/cardMapa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        style="@style/EstiloTextoDescripcion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="32dp"
+        android:text="Presiona el botón rojo para enviar una alerta inmediata a tus vecinos y autoridades."
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/tvTituloEmergencia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <FrameLayout
+        android:id="@+id/containerSOS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvTituloEmergencia"
+        app:layout_constraintBottom_toTopOf="@id/panelReporte"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <View
+            android:layout_width="210dp"
+            android:layout_height="210dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circulo_alerta_suave"
+            android:alpha="0.2"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSOS"
+            style="@style/EstiloBotonSOS"
+            android:layout_width="192dp"
+            android:layout_height="192dp"
+            android:layout_gravity="center"
+            android:text="SOS\nALERTA"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:padding="0dp"
+            app:icon="@drawable/ic_sos"
+            app:iconSize="48dp"
+            app:iconGravity="textTop"
+            app:iconTint="@color/blanco" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOCAR PARA ACTIVAR"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/gris_slate_400"
+        android:letterSpacing="0.1"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/containerSOS"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/panelReporte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/fondo_hoja_inferior"
+        android:padding="24dp"
+        android:elevation="16dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomNav">
+
+        <TextView
+            style="@style/EstiloTituloSeccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reportar incidente específico:"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:id="@+id/btnIncidenteMedica"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:background="@drawable/fondo_boton_bordeado"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_medical_services"
+                    app:tint="@color/gris_slate_700"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Médica"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/gris_slate_700"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <View android:layout_width="12dp" android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:id="@+id/btnIncidenteIncendio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:background="@drawable/fondo_boton_bordeado"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_local_fire_department"
+                    app:tint="@color/gris_slate_700"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Incendio"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/gris_slate_700"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <View android:layout_width="12dp" android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:id="@+id/btnIncidentePolicia"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:background="@drawable/fondo_boton_bordeado"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_local_police"
+                    app:tint="@color/gris_slate_700"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Policía"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/gris_slate_700"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blanco"
+        app:menu="@menu/menu_navegacion"
+        app:itemIconTint="@color/gris_slate_500"
+        app:itemTextColor="@color/gris_slate_500"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
