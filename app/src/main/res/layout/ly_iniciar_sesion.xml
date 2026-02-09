@@ -6,13 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ActivityIniciarSesion"
-    android:background="@color/color_fondo">
+    android:background="@color/fondo_oscuro">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:background="@color/color_fondo"
+        android:background="@color/fondo_oscuro"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,8 +57,8 @@
         android:layout_marginStart="27dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="325dp"
-        android:text="Ingresa tus credenciales para acceder a tu cuenta y mantener segura tu comunidad"
-        android:textColor="@color/color_secundario"
+        android:text="Ingresa tus credenciales para acceder a tu cuenta y mantener segura tu comunidad."
+        android:textColor="@color/gris_slate_400"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.008"
         app:layout_constraintStart_toStartOf="parent"
@@ -105,7 +105,7 @@
             android:hint="usuario@email.com"
             android:inputType="textEmailAddress|textPersonName"
             android:textColor="@color/white"
-            android:textColorHint="@color/color_secundario"
+            android:textColorHint="@color/gris_slate_400"
             app:boxStrokeColor="@color/white" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -152,7 +152,7 @@
             android:hint="Ingrese su contraseña"
             android:inputType="textPassword"
             android:textColor="@color/white"
-            android:textColorHint="@color/color_secundario"
+            android:textColorHint="@color/gris_slate_400"
             app:boxStrokeColor="@color/white" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -162,7 +162,7 @@
         android:layout_width="337dp"
         android:layout_height="43dp"
         android:layout_marginTop="161dp"
-        android:backgroundTint="@color/boton_primario"
+        android:backgroundTint="@color/primario"
         android:text="Iniciar Sesión"
         android:textStyle="bold"
         app:cornerRadius="9dp"
@@ -177,7 +177,7 @@
         android:layout_marginStart="100dp"
         android:layout_marginTop="16dp"
         android:text="¿No tienes una cuenta?"
-        android:textColor="@color/color_secundario"
+        android:textColor="@color/gris_slate_400"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnIniciarSesion" />
 
@@ -189,7 +189,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="123dp"
         android:text="Regístrate"
-        android:textColor="#1080D9"
+        android:textColor="@color/verificado_azul"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -204,7 +204,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="23dp"
         android:text="¿Olvidaste tu contraseña?"
-        android:textColor="#1080D9"
+        android:textColor="@color/verificado_azul"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

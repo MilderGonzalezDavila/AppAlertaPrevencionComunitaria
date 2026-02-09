@@ -6,13 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ActivityRecuperarClave"
-    android:background="@color/color_fondo">
+    android:background="@color/fondo_oscuro">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:background="@color/color_fondo"
+        android:background="@color/fondo_oscuro"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,7 +40,7 @@
         android:layout_margin="24dp"
         android:text="¡Comencemos!"
         android:textAlignment="center"
-        android:textColor="@color/color_secundario"
+        android:textColor="@color/gris_slate_400"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -85,7 +85,7 @@
             android:hint="usuario@email.com"
             android:inputType="textEmailAddress"
             android:textColor="@color/white"
-            android:textColorHint="@color/color_secundario"
+            android:textColorHint="@color/gris_slate_400"
             app:boxStrokeColor="@color/white" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -96,7 +96,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="300dp"
         android:layout_marginEnd="24dp"
-        android:backgroundTint="@color/boton_primario"
+        android:backgroundTint="@color/primario"
         android:text="Enviar enlace"
         android:textStyle="bold"
         app:cornerRadius="12dp"
@@ -109,7 +109,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Volver al inicio de sesión"
-        android:textColor="#1080D9"
+        android:textColor="@color/verificado_azul"
         android:textStyle="bold"
         android:layout_marginTop="24dp"
         app:layout_constraintTop_toBottomOf="@id/btnEnviarEnlace"
@@ -122,7 +122,7 @@
         android:layout_height="41dp"
         android:text="Ingresa tu correo o teléfono y te enviaremos un enlace para restablecer tu contraseña."
         android:textAlignment="center"
-        android:textColor="@color/color_secundario"
+        android:textColor="@color/gris_slate_400"
         app:layout_constraintTop_toBottomOf="@+id/txtDescripcion"
         tools:layout_editor_absoluteX="48dp" />
 

@@ -5,14 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color_fondo"
+    android:background="@color/fondo_oscuro"
     tools:context=".ActivityRegistrarse">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@color/color_fondo"
+        android:background="@color/fondo_oscuro"
         android:minHeight="?attr/actionBarSize"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,7 +51,7 @@
         android:layout_margin="24dp"
         android:text="Crea tu cuenta segura y conecta con tus vecinos para mantener el barrio protegido."
         android:textAlignment="center"
-        android:textColor="@color/color_secundario"
+        android:textColor="@color/gris_slate_400"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.479"
         app:layout_constraintStart_toStartOf="parent"
@@ -100,7 +100,7 @@
             android:hint="Juan Pérez"
             android:inputType="textPersonName"
             android:textColor="@color/white"
-            android:textColorHint="@color/color_secundario"
+            android:textColorHint="@color/gris_slate_400"
             app:boxStrokeColor="@color/white" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -145,7 +145,7 @@
             android:hint="+34 600 000 000"
             android:inputType="phone"
             android:textColor="@color/white"
-            android:textColorHint="@color/color_secundario"
+            android:textColorHint="@color/gris_slate_400"
             app:boxStrokeColor="@color/white" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -170,7 +170,7 @@
             android:layout_width="0dp"
             android:layout_height="1dp"
             android:layout_weight="1"
-            android:background="@color/color_secundario" />
+            android:background="@color/gris_slate_400" />
 
         <TextView
             android:id="@+id/textViewUnirseCodigo"
@@ -179,7 +179,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:text="Unirse a un grupo"
-            android:textColor="@color/color_secundario"
+            android:textColor="@color/gris_slate_400"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -187,7 +187,7 @@
             android:layout_width="0dp"
             android:layout_height="1dp"
             android:layout_weight="1"
-            android:background="@color/color_secundario" />
+            android:background="@color/gris_slate_400" />
 
     </LinearLayout>
 
@@ -197,7 +197,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:text="Al registrarte aceptas los Términos y Privacidad."
-        android:textColor="@color/color_secundario"
+        android:textColor="@color/gris_slate_400"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -209,7 +209,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="4dp"
-        android:backgroundTint="@color/boton_primario"
+        android:backgroundTint="@color/primario"
         android:text="Continuar"
         android:textStyle="bold"
         app:cornerRadius="12dp"
@@ -228,7 +228,7 @@
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:strokeColor="@color/color_secundario"
+        app:strokeColor="@color/gris_slate_400"
         app:strokeWidth="1dp">
 
         <LinearLayout
@@ -284,7 +284,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
                             android:text="Si ya tienes el código de invitación de tu comunidad, ingrésalo aquí."
-                            android:textColor="@color/color_secundario"
+                            android:textColor="@color/gris_slate_400"
                             android:textSize="14sp" />
                     </LinearLayout>
 
@@ -319,7 +319,7 @@
                     android:textAlignment="center"
                     android:textAllCaps="true"
                     android:textColor="@color/white"
-                    android:textColorHint="@color/color_secundario" />
+                    android:textColorHint="@color/gris_slate_400" />
 
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -376,7 +376,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:text="Para administradores de barrio."
-                android:textColor="@color/color_secundario"
+                android:textColor="@color/gris_slate_400"
                 android:textSize="14sp" />
         </LinearLayout>
 
