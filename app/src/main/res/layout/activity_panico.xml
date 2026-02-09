@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/fondo_oscuro">
+    android:background="@color/bg_dark">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/headerContainer"
@@ -20,7 +20,7 @@
             android:layout_height="48dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:src="@drawable/ic_menu"
-            app:tint="@color/blanco"
+            app:tint="@color/white"
             android:contentDescription="@string/desc_menu_principal"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -31,7 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Alerta Vecinal"
-            android:textColor="@color/blanco"
+            android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -43,7 +43,7 @@
             android:layout_height="48dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:src="@drawable/ic_settings"
-            app:tint="@color/blanco"
+            app:tint="@color/white"
             android:contentDescription="@string/desc_configuracion"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -85,14 +85,14 @@
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:src="@drawable/ic_my_location"
-                app:tint="@color/primario"/>
+                app:tint="@color/brand_primary"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:text="Ubicación actual: Av. Reforma 222"
-                android:textColor="@color/blanco"
+                android:textColor="@color/white"
                 android:textSize="14sp"
                 android:textStyle="bold"/>
         </LinearLayout>
@@ -105,7 +105,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="¿Tienes una emergencia?"
-        android:textColor="@color/blanco"
+        android:textColor="@color/white"
         android:textSize="24sp"
         android:textAlignment="center"
         app:layout_constraintTop_toBottomOf="@id/cardMapa"
@@ -152,12 +152,12 @@
             android:textStyle="bold"
             android:padding="0dp"
             android:insetTop="0dp"
-            android:backgroundTint="@color/emergencia_sos"
+            android:backgroundTint="@color/red_sos"
             android:elevation="10dp"
             app:icon="@drawable/ic_sos"
             app:iconSize="48dp"
             app:iconGravity="textTop"
-            app:iconTint="@color/blanco" />
+            app:iconTint="@color/white" />
     </FrameLayout>
 
     <TextView
@@ -188,7 +188,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Reportar incidente específico:"
-            android:textColor="@color/blanco"
+            android:textColor="@color/white"
             android:textSize="18sp"
             android:layout_marginBottom="16dp"/>
 
@@ -214,7 +214,7 @@
                     android:layout_width="32dp"
                     android:layout_height="32dp"
                     android:src="@drawable/ic_medical_services"
-                    app:tint="@color/primario"/>
+                    app:tint="@color/brand_primary"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -222,7 +222,7 @@
                     android:text="Médica"
                     android:textSize="12sp"
                     android:textStyle="bold"
-                    android:textColor="@color/blanco"
+                    android:textColor="@color/white"
                     android:layout_marginTop="8dp"/>
             </LinearLayout>
 
@@ -244,7 +244,7 @@
                     android:layout_width="32dp"
                     android:layout_height="32dp"
                     android:src="@drawable/ic_local_fire_department"
-                    app:tint="@color/mascota_naranja_oscuro"/>
+                    app:tint="@color/orange_pet_dark"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -252,7 +252,7 @@
                     android:text="Incendio"
                     android:textSize="12sp"
                     android:textStyle="bold"
-                    android:textColor="@color/blanco"
+                    android:textColor="@color/white"
                     android:layout_marginTop="8dp"/>
             </LinearLayout>
 
@@ -274,7 +274,7 @@
                     android:layout_width="32dp"
                     android:layout_height="32dp"
                     android:src="@drawable/ic_local_police"
-                    app:tint="@color/verificado_azul"/>
+                    app:tint="@color/blue_verified"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -282,7 +282,7 @@
                     android:text="Policía"
                     android:textSize="12sp"
                     android:textStyle="bold"
-                    android:textColor="@color/blanco"
+                    android:textColor="@color/white"
                     android:layout_marginTop="8dp"/>
             </LinearLayout>
 
@@ -293,7 +293,7 @@
         android:id="@+id/bottomNav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/borde_oscuro"
+        android:background="@color/border_dark"
         app:menu="@menu/menu_navegacion"
         app:itemIconTint="@color/gris_slate_500"
         app:itemTextColor="@color/gris_slate_500"

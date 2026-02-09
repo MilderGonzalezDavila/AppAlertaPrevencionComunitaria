@@ -2,30 +2,35 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="primario">#137FEC</color>
-    <color name="primario_hover">#2563EB</color>
-    <color name="fondo_claro">#F6F7F8</color>
-    <color name="fondo_oscuro">#101922</color>
-    <color name="blanco">#FFFFFF</color>
-    <color name="blanco_traslucido">#E6FFFFFF</color>
-    <color name="alerta_rojo">#EF4444</color>
-    <color name="emergencia_sos">#DC2626</color>
-    <color name="emergencia_sos_hover">#B91C1C</color>
-    <color name="alerta_rojo_suave">#FEF2F2</color>
-    <color name="seguridad_verde">#22C55E</color>
-    <color name="seguridad_verde_oscuro">#16A34A</color>
-    <color name="seguridad_verde_suave">#F0FDF4</color>
-    <color name="mascota_naranja">#FB923C</color>
-    <color name="mascota_naranja_oscuro">#F97316</color>
-    <color name="mascota_naranja_suave">#FFF7ED</color>
-    <color name="verificado_azul">#3B82F6</color>
-    <color name="scroll_barra">#3B4754</color>
-    <color name="scroll_barra_hover">#556677</color>
-    <color name="fondo_tarjeta_oscuro">#1C2127</color>
-    <color name="fondo_boton_oscuro">#283039</color>
-    <color name="fondo_boton_oscuro_hover">#343E4A</color>
-    <color name="borde_oscuro">#2D3642</color>
-    <color name="fondo_seccion_oscuro">#111418</color>
+    <color name="white_translucent">#E6FFFFFF</color>
+
+    <color name="brand_primary">#137FEC</color>
+    <color name="brand_primary_dark">#2563EB</color>
+    <color name="bg_light">#F6F7F8</color>
+    <color name="bg_dark">#101922</color>
+
+    <color name="red_alert">#EF4444</color>
+    <color name="red_sos">#DC2626</color>
+    <color name="red_sos_dark">#B91C1C</color>
+
+    <color name="green_safety">#22C55E</color>
+    <color name="green_safety_dark">#16A34A</color>
+    <color name="green_soft_bg">#F0FDF4</color>
+
+    <color name="orange_pet">#FB923C</color>
+    <color name="orange_pet_dark">#F97316</color>
+    <color name="orange_soft_bg">#FFF7ED</color>
+
+    <color name="blue_verified">#3B82F6</color>
+
+    <color name="ui_scroll_bar">#3B4754</color>
+    <color name="ui_scroll_bar_hover">#556677</color>
+
+    <color name="bg_card_dark">#1C2127</color>
+    <color name="bg_button_dark">#283039</color>
+    <color name="bg_button_dark_hover">#343E4A</color>
+    <color name="border_dark">#2D3642</color>
+    <color name="bg_section_dark">#111418</color>
 
     <color name="gris_slate_50">#F8FAFC</color>
     <color name="gris_slate_100">#F1F5F9</color>
@@ -36,8 +41,8 @@
     <color name="gris_slate_800">#1E293B</color>
     <color name="gris_slate_900">#0F172A</color>
 
-    <color name="sombra_primaria">#33137FEC</color>
-    <color name="sombra_sos">#80DC2626</color>
+    <color name="shadow_primary">#33137FEC</color>
+    <color name="shadow_sos">#80DC2626</color>
 
 </resources>
 

@@ -36,32 +36,32 @@
     </style>
 
     <style name="EstiloBotonPrimario" parent="Widget.MaterialComponents.Button">
-        <item name="backgroundTint">@color/primario</item>
-        <item name="android:textColor">@color/blanco</item>
+        <item name="backgroundTint">@color/brand_primary</item>
+        <item name="android:textColor">@color/white</item>
         <item name="android:textSize">16sp</item>
         <item name="android:textStyle">bold</item>
         <item name="cornerRadius">12dp</item> <item name="android:minHeight">56dp</item> <item name="elevation">8dp</item> </style>
 
     <style name="EstiloBotonSOS" parent="Widget.MaterialComponents.Button">
-        <item name="backgroundTint">@color/emergencia_sos</item>
-        <item name="android:textColor">@color/blanco</item>
+        <item name="backgroundTint">@color/red_sos</item>
+        <item name="android:textColor">@color/white</item>
         <item name="cornerRadius">100dp</item> <item name="android:insetTop">0dp</item>
         <item name="android:insetBottom">0dp</item>
         <item name="elevation">12dp</item>
-        <item name="rippleColor">@color/emergencia_sos_hover</item>
+        <item name="rippleColor">@color/red_sos_dark</item>
     </style>
 
     <style name="EstiloBotonSecundario" parent="Widget.MaterialComponents.Button.OutlinedButton">
         <item name="android:textColor">@color/gris_slate_900</item>
         <item name="strokeColor">@color/gris_slate_200</item>
         <item name="strokeWidth">1dp</item>
-        <item name="backgroundTint">@color/blanco</item>
+        <item name="backgroundTint">@color/white</item>
         <item name="cornerRadius">12dp</item>
         <item name="android:minHeight">56dp</item>
     </style>
 
     <style name="EstiloChipAlerta">
-        <item name="chipBackgroundColor">@color/blanco</item>
+        <item name="chipBackgroundColor">@color/white</item>
         <item name="chipStrokeColor">@color/gris_slate_200</item>
         <item name="chipStrokeWidth">1dp</item>
         <item name="android:textColor">@color/gris_slate_700</item>
@@ -78,7 +78,7 @@
     </style>
 
     <style name="EstiloTarjetaFeed" parent="Widget.MaterialComponents.CardView">
-        <item name="cardBackgroundColor">@color/blanco</item>
+        <item name="cardBackgroundColor">@color/white</item>
         <item name="cardCornerRadius">12dp</item>
         <item name="cardElevation">2dp</item>
         <item name="contentPadding">0dp</item>
