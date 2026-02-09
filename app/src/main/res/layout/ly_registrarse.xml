@@ -308,7 +308,7 @@
                 app:hintEnabled="false">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etCodigo"
+                    android:id="@+id/txtCodigo"
                     android:layout_width="match_parent"
                     android:layout_height="56dp"
                     android:hint="CÓDIGO (EJ. B4RR10)"
@@ -381,6 +381,7 @@
         </LinearLayout>
 
         <RadioButton
+            android:id="@+id/rdbCrearComunidad"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:buttonTint="@color/white" />
