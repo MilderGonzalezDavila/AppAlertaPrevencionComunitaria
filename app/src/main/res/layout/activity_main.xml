@@ -51,7 +51,7 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="365dp"
-            android:layout_height="450dp"
+            android:layout_height="410dp"
             app:cardBackgroundColor="@android:color/transparent"
             android:layout_gravity="center"
             app:cardCornerRadius="12dp"
@@ -133,6 +133,7 @@
                 android:id="@+id/btnIniciarSesion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:text="Iniciar Sesión"
                 android:backgroundTint="@color/primario"
                 style="@style/EstiloBotonPrimario"
@@ -142,6 +143,7 @@
                 android:id="@+id/btnRegistro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:text="Registrarse"
                 android:backgroundTint="@color/fondo_boton_oscuro"
                 style="@style/EstiloBotonPrimario"
@@ -152,6 +154,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="v1.0 Confianza y Seguridad"
+            android:layout_marginTop="10dp"
             android:layout_gravity="center"
             android:textColor="@color/gris_slate_500"
             android:textSize="12sp"/>
