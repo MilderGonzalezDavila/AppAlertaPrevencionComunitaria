@@ -5,14 +5,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/fondo_claro">
+    android:background="@color/fondo_oscuro">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/headerContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:background="@color/fondo_claro"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
@@ -21,7 +20,7 @@
             android:layout_height="48dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:src="@drawable/ic_menu"
-            app:tint="@color/gris_slate_900"
+            app:tint="@color/blanco"
             android:contentDescription="@string/desc_menu_principal"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -32,6 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Alerta Vecinal"
+            android:textColor="@color/blanco"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -43,7 +43,7 @@
             android:layout_height="48dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:src="@drawable/ic_settings"
-            app:tint="@color/gris_slate_900"
+            app:tint="@color/blanco"
             android:contentDescription="@string/desc_configuracion"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -57,6 +57,7 @@
         android:layout_height="160dp"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="8dp"
+        app:cardBackgroundColor="@android:color/transparent"
         app:cardCornerRadius="12dp"
         app:layout_constraintTop_toBottomOf="@id/headerContainer">
 
@@ -65,14 +66,13 @@
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
             android:src="@drawable/img_mapa_placeholder"
-            android:alpha="0.8"
+            android:alpha="0.7"
             tools:ignore="ContentDescription" />
 
         <View
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/gradiente_oscuro_bottom" />
-
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -105,6 +105,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="¿Tienes una emergencia?"
+        android:textColor="@color/blanco"
         android:textSize="24sp"
         android:textAlignment="center"
         app:layout_constraintTop_toBottomOf="@id/cardMapa"
@@ -120,6 +121,7 @@
         android:text="Presiona el botón rojo para enviar una alerta inmediata a tus vecinos y autoridades."
         android:textAlignment="center"
         android:textSize="14sp"
+        android:textColor="@color/gris_slate_400"
         app:layout_constraintTop_toBottomOf="@id/tvTituloEmergencia"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
@@ -134,22 +136,24 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <View
-            android:layout_width="210dp"
-            android:layout_height="210dp"
+            android:layout_width="290dp"
+            android:layout_height="290dp"
             android:layout_gravity="center"
-            android:background="@drawable/circulo_alerta_suave"
-            android:alpha="0.2"/>
+            android:background="@drawable/glow_sos_gradient"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnSOS"
             style="@style/EstiloBotonSOS"
-            android:layout_width="192dp"
-            android:layout_height="192dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_gravity="center"
             android:text="SOS\nALERTA"
             android:textSize="24sp"
             android:textStyle="bold"
             android:padding="0dp"
+            android:insetTop="0dp"
+            android:backgroundTint="@color/emergencia_sos"
+            android:elevation="10dp"
             app:icon="@drawable/ic_sos"
             app:iconSize="48dp"
             app:iconGravity="textTop"
@@ -162,7 +166,7 @@
         android:text="TOCAR PARA ACTIVAR"
         android:textSize="12sp"
         android:textStyle="bold"
-        android:textColor="@color/gris_slate_400"
+        android:textColor="@color/gris_slate_500"
         android:letterSpacing="0.1"
         android:layout_marginTop="16dp"
         app:layout_constraintTop_toBottomOf="@id/containerSOS"
@@ -184,6 +188,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Reportar incidente específico:"
+            android:textColor="@color/blanco"
             android:textSize="18sp"
             android:layout_marginBottom="16dp"/>
 
@@ -209,7 +214,7 @@
                     android:layout_width="32dp"
                     android:layout_height="32dp"
                     android:src="@drawable/ic_medical_services"
-                    app:tint="@color/gris_slate_700"/>
+                    app:tint="@color/primario"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -217,7 +222,7 @@
                     android:text="Médica"
                     android:textSize="12sp"
                     android:textStyle="bold"
-                    android:textColor="@color/gris_slate_700"
+                    android:textColor="@color/blanco"
                     android:layout_marginTop="8dp"/>
             </LinearLayout>
 
@@ -239,7 +244,7 @@
                     android:layout_width="32dp"
                     android:layout_height="32dp"
                     android:src="@drawable/ic_local_fire_department"
-                    app:tint="@color/gris_slate_700"/>
+                    app:tint="@color/mascota_naranja_oscuro"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -247,7 +252,7 @@
                     android:text="Incendio"
                     android:textSize="12sp"
                     android:textStyle="bold"
-                    android:textColor="@color/gris_slate_700"
+                    android:textColor="@color/blanco"
                     android:layout_marginTop="8dp"/>
             </LinearLayout>
 
@@ -269,7 +274,7 @@
                     android:layout_width="32dp"
                     android:layout_height="32dp"
                     android:src="@drawable/ic_local_police"
-                    app:tint="@color/gris_slate_700"/>
+                    app:tint="@color/verificado_azul"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -277,7 +282,7 @@
                     android:text="Policía"
                     android:textSize="12sp"
                     android:textStyle="bold"
-                    android:textColor="@color/gris_slate_700"
+                    android:textColor="@color/blanco"
                     android:layout_marginTop="8dp"/>
             </LinearLayout>
 
@@ -288,7 +293,7 @@
         android:id="@+id/bottomNav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/blanco"
+        android:background="@color/borde_oscuro"
         app:menu="@menu/menu_navegacion"
         app:itemIconTint="@color/gris_slate_500"
         app:itemTextColor="@color/gris_slate_500"
