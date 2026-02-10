@@ -13,7 +13,7 @@
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:src="@drawable/ic_sos"
-        app:tint="@color/blanco"/>
+        app:tint="@color/white"/>
 
     <TextView
         android:id="@+id/tvTitulo"
@@ -22,6 +22,6 @@
         android:text="Incidente"
         android:textSize="12sp"
         android:textStyle="bold"
-        android:textColor="@color/blanco"
+        android:textColor="@color/white"
         android:layout_marginTop="8dp"/>
 </LinearLayout>
