@@ -6,13 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ActivityRecuperarClave"
-    android:background="@color/fondo_oscuro">
+    android:background="@color/bg_dark">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:background="@color/fondo_oscuro"
+        android:background="@color/bg_dark"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
@@ -96,7 +96,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="300dp"
         android:layout_marginEnd="24dp"
-        android:backgroundTint="@color/primario"
+        android:backgroundTint="@color/brand_primary"
         android:text="Enviar enlace"
         android:textStyle="bold"
         app:cornerRadius="12dp"
@@ -109,7 +109,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Volver al inicio de sesión"
-        android:textColor="@color/verificado_azul"
+        android:textColor="@color/blue_verified"
         android:textStyle="bold"
         android:layout_marginTop="24dp"
         app:layout_constraintTop_toBottomOf="@id/btnEnviarEnlace"
@@ -120,10 +120,13 @@
         android:id="@+id/txtDescripcion2"
         android:layout_width="315dp"
         android:layout_height="41dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
         android:text="Ingresa tu correo o teléfono y te enviaremos un enlace para restablecer tu contraseña."
         android:textAlignment="center"
         android:textColor="@color/gris_slate_400"
-        app:layout_constraintTop_toBottomOf="@+id/txtDescripcion"
-        tools:layout_editor_absoluteX="48dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescripcion" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
