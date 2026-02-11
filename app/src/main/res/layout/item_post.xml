@@ -96,7 +96,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             tools:text="Sector Los Olivos - Zona 4"
-            app:chipIcon="@drawable/ic_ubicacion"
+            app:chipIcon="@drawable/ic_location"
             app:chipIconTint="@color/brand_primary"
             android:textColor="@color/brand_primary"
             app:chipBackgroundColor="@color/bg_button_dark"
@@ -154,7 +154,7 @@
                     android:layout_marginHorizontal="12dp"
                     android:layout_weight="1"
                     android:scaleType="fitXY"
-                    android:src="@drawable/ic_honda_audio"
+                    android:src="@drawable/ic_audio_wave"
                     app:tint="@color/gris_slate_500" />
 
                 <TextView

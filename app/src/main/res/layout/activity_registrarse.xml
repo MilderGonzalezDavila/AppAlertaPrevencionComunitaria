@@ -87,7 +87,7 @@
         app:boxStrokeWidth="1dp"
         app:boxStrokeWidthFocused="2dp"
         app:endIconMode="custom"
-        app:endIconDrawable="@drawable/outline_account_circle_24"
+        app:endIconDrawable="@drawable/ic_logo_user"
         app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -132,7 +132,7 @@
         app:boxStrokeWidth="1dp"
         app:boxStrokeWidthFocused="2dp"
         app:endIconMode="custom"
-        app:endIconDrawable="@drawable/outline_mobile_3_24"
+        app:endIconDrawable="@drawable/ic_phone"
         app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -254,7 +254,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/outline_groups_24" />
+                        android:src="@drawable/ic_groups" />
                 </FrameLayout>
 
                 <View
@@ -350,7 +350,7 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_gravity="center"
-                android:src="@drawable/outline_add_home_work_24" />
+                android:src="@drawable/ic_home_work" />
         </FrameLayout>
 
         <View

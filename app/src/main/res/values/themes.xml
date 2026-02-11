@@ -69,7 +69,7 @@
     </style>
 
     <style name="Widget.App.TextInputLayout">
-        <item name="android:background">@drawable/fondo_input_borde</item> <item name="android:textColor">@color/gris_slate_900</item>
+        <item name="android:background">@drawable/bg_border_input</item> <item name="android:textColor">@color/gris_slate_900</item>
         <item name="android:textColorHint">@color/gris_slate_400</item>
         <item name="android:textSize">16sp</item>
         <item name="android:paddingStart">16dp</item>

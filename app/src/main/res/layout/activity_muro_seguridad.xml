@@ -133,7 +133,7 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/ic_camara"
+                android:src="@drawable/ic_camera"
                 app:tint="@color/gris_slate_500" />
 
             <ImageView
@@ -147,7 +147,7 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_marginStart="20dp"
-                android:src="@drawable/ic_ubicacion"
+                android:src="@drawable/ic_location"
                 app:tint="@color/gris_slate_500" />
 
             <View
