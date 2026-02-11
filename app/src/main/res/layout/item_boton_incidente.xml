@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:padding="16dp"
-    android:background="@drawable/fondo_boton_bordeado">
+    android:background="@drawable/bg_button_bordered">
 
     <ImageView
         android:id="@+id/imgIcono"

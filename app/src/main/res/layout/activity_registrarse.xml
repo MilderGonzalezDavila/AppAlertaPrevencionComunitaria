@@ -248,7 +248,7 @@
                 <FrameLayout
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:background="@drawable/bg_circulo_azul">
+                    android:background="@drawable/bg_circle_blue">
 
                     <ImageView
                         android:layout_width="24dp"
@@ -333,7 +333,7 @@
         android:layout_width="366dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/bg_borde_punteado"
+        android:background="@drawable/bg_border_dotted"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="16dp"
@@ -344,7 +344,7 @@
         <FrameLayout
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:background="@drawable/bg_circulo_verde">
+            android:background="@drawable/bg_circle_green">
 
             <ImageView
                 android:layout_width="24dp"
