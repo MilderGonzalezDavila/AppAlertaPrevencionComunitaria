@@ -12,10 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppAlertaPrevencionComunitaria" >
         <activity
-            android:name=".Activity_Muro_Seguridad"
+            android:name=".ActivityMuroSeguridad"
             android:exported="false" />
         <activity
-            android:name=".Activity_Panico"
+            android:name=".ActivityPanico"
             android:exported="false" />
         <activity
             android:name=".ActivityRecuperarClave"
