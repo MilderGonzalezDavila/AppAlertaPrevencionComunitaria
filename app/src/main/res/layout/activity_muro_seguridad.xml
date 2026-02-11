@@ -24,7 +24,7 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:padding="2dp"
-        android:src="@tools:sample/avatars"
+        tools:src="@tools:sample/avatars"
         app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
         app:strokeColor="@color/orange_pet"
         app:strokeWidth="1dp"
@@ -110,7 +110,7 @@
             <com.google.android.material.imageview.ShapeableImageView
                 android:layout_width="32dp"
                 android:layout_height="32dp"
-                android:src="@tools:sample/avatars"
+                tools:src="@tools:sample/avatars"
                 app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full" />
 
             <TextView

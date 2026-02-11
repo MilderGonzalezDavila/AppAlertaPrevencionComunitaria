@@ -27,7 +27,7 @@
             app:layout_constraintBottom_toBottomOf="parent" />
 
         <TextView
-            style="@style/TextAppearance.App.Title.Medium"
+            style="@style/TextAppearance.App.Title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Alerta Vecinal"
@@ -100,7 +100,7 @@
 
     <TextView
         android:id="@+id/tvTituloEmergencia"
-        style="@style/TextAppearance.App.Headline.Large"
+        style="@style/TextAppearance.App.Headline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -113,7 +113,7 @@
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <TextView
-        style="@style/TextAppearance.App.Body.Medium"
+        style="@style/TextAppearance.App.Body"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -184,7 +184,7 @@
         app:layout_constraintBottom_toTopOf="@id/bottomNav">
 
         <TextView
-            style="@style/TextAppearance.App.Title.Medium"
+            style="@style/TextAppearance.App.Title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Reportar incidente específico:"
