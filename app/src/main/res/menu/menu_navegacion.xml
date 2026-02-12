@@ -4,11 +4,11 @@
         android:id="@+id/nav_home"
         android:icon="@drawable/ic_menu"
         android:title="Inicio" />
-
     <item
         android:id="@+id/nav_sos"
         android:title=""
-        android:enabled="false" /> <item
+        android:enabled="false" />
+    <item
     android:id="@+id/nav_profile"
     android:icon="@drawable/ic_person"
     android:title="Perfil" />
