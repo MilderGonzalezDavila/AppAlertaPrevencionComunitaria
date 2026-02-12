@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/fondo_oscuro">
+    android:background="@color/bg_dark">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -36,7 +37,7 @@
                     android:layout_height="wrap_content"
                     android:text="Alerta y Prevención"
                     android:textColor="@color/white"
-                    android:textSize="20dp">
+                    android:textSize="20sp">
                 </TextView>
 
                 <TextView
@@ -45,7 +46,6 @@
                     android:text="COMUNITARIA"
                     android:textColor="@color/gris_slate_400"
                     android:textSize="16sp"/>
-
             </LinearLayout>
         </LinearLayout>
 
@@ -108,7 +108,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Juntos construimos una comunidad más segura."
-                    android:textSize="25dp"
+                    android:textSize="25sp"
                     android:textColor="@color/blanco"
                     android:textStyle="bold"/>
             </LinearLayout>
@@ -158,8 +158,7 @@
             android:layout_gravity="center"
             android:textColor="@color/gris_slate_500"
             android:textSize="12sp"/>
+
     </LinearLayout>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

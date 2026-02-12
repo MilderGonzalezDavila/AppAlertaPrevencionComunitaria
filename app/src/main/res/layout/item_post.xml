@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/bg_card_dark"
+    app:strokeColor="@color/border_dark"
+    app:strokeWidth="1dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgAvatarPerfil"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            tools:src="@tools:sample/avatars"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtNombreUsuario"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="Oficial Ramírez"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toEndOf="@id/imgAvatarPerfil"
+            app:layout_constraintTop_toTopOf="@id/imgAvatarPerfil"
+            app:layout_constraintEnd_toStartOf="@+id/btnMasOpciones"
+            app:layout_constraintBottom_toTopOf="@+id/txtEtiquetaTipo"
+            app:layout_constraintVertical_chainStyle="packed"/>
+
+        <TextView
+            android:id="@+id/txtEtiquetaTipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Consejo de Seguridad"
+            android:textColor="@color/green_safety"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/txtNombreUsuario"
+            app:layout_constraintTop_toBottomOf="@id/txtNombreUsuario"
+            app:layout_constraintBottom_toBottomOf="@id/imgAvatarPerfil"/>
+
+        <TextView
+            android:id="@+id/txtTiempoPublicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" • 2h"
+            android:textColor="@color/gris_slate_400"
+            android:textSize="12sp"
+            android:layout_marginStart="4dp"
+            app:layout_constraintStart_toEndOf="@id/txtEtiquetaTipo"
+            app:layout_constraintBaseline_toBaselineOf="@id/txtEtiquetaTipo"/>
+
+        <ImageView
+            android:id="@+id/btnMasOpciones"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_more_vert"
+            app:tint="@color/gris_slate_500"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/txtContenidoPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            tools:text="Vecinos, recuerden verificar que el portón principal quede bien cerrado al salir. Hemos notado actividad inusual en la zona norte."
+            android:textColor="@color/gris_slate_200"
+            android:textSize="14sp"
+            android:lineSpacingMultiplier="1.2"
+            app:layout_constraintTop_toBottomOf="@id/imgAvatarPerfil"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipSector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            tools:text="Sector Los Olivos - Zona 4"
+            app:chipIcon="@drawable/ic_location"
+            app:chipIconTint="@color/brand_primary"
+            android:textColor="@color/brand_primary"
+            app:chipBackgroundColor="@color/bg_button_dark"
+            app:chipStrokeWidth="0dp"
+            app:chipCornerRadius="100dp"
+            app:ensureMinTouchTargetSize="false"
+            android:visibility="gone"
+            tools:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@id/txtContenidoPost"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgContenidoMultimedia"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="12dp"
+            android:scaleType="centerCrop"
+            android:visibility="visible"
+            tools:src="@tools:sample/backgrounds/scenic"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Medium"
+            app:layout_constraintTop_toBottomOf="@id/chipSector"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/contenedorAudio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cardBackgroundColor="@color/bg_button_dark"
+            app:cardCornerRadius="100dp"
+            app:strokeWidth="0dp"
+            app:cardElevation="0dp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@id/imgContenidoMultimedia"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="16dp">
+
+                <ImageView
+                    android:id="@+id/btnReproducirAudio"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_play_circle"
+                    app:tint="@color/brand_primary" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_audio_wave"
+                    app:tint="@color/gris_slate_500" />
+
+                <TextView
+                    android:id="@+id/txtDuracionAudio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:14"
+                    android:textColor="@color/gris_slate_400"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:id="@+id/contenedorAcciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            app:layout_constraintTop_toBottomOf="@id/contenedorAudio"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMeGusta"
+                style="@style/Widget.Material3.Button.TextButton.Icon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:icon="@drawable/ic_like"
+                app:iconTint="@color/gris_slate_500"
+                app:iconSize="20dp"
+                tools:text="45"
+                android:textColor="@color/gris_slate_500"
+                android:textSize="12sp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:minHeight="48dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnComentar"
+                style="@style/Widget.Material3.Button.TextButton.Icon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:icon="@drawable/ic_chat"
+                app:iconTint="@color/gris_slate_500"
+                app:iconSize="20dp"
+                android:text="Comentar"
+                android:textColor="@color/gris_slate_500"
+                android:textSize="12sp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:minHeight="48dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCompartir"
+                style="@style/Widget.Material3.Button.TextButton.Icon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:icon="@drawable/ic_share"
+                app:iconTint="@color/gris_slate_500"
+                app:iconSize="20dp"
+                android:text="Compartir"
+                android:textColor="@color/gris_slate_500"
+                android:textSize="12sp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:minHeight="48dp"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
