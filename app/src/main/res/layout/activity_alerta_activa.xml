@@ -188,42 +188,57 @@
                     android:textSize="14sp" />
             </LinearLayout>
 
-            <LinearLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:orientation="horizontal"
-                android:weightSum="2"
-                app:layout_constraintTop_toBottomOf="@+id/layoutLocation">
+                app:layout_constraintTop_toBottomOf="@+id/layoutLocation"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
 
                 <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnWay"
                     android:layout_width="0dp"
                     android:layout_height="56dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
                     android:backgroundTint="@color/bg_button_dark"
                     android:text="Voy en camino"
                     android:textAllCaps="false"
                     android:textColor="@color/white"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
                     app:cornerRadius="12dp"
                     app:icon="@drawable/ic_car"
                     app:iconGravity="textStart"
-                    app:iconTint="@color/white" />
+                    app:iconTint="@color/white"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btnPolice"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_weight="1"/>
 
                 <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnPolice"
                     android:layout_width="0dp"
                     android:layout_height="56dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_weight="1"
+                    android:layout_marginStart="6dp"
                     android:backgroundTint="@color/red_sos"
                     android:text="Llamar Policía"
                     android:textAllCaps="false"
                     android:textColor="@color/white"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
                     app:cornerRadius="12dp"
                     app:icon="@drawable/ic_local_police"
                     app:iconGravity="textStart"
-                    app:iconTint="@color/white" />
-            </LinearLayout>
+                    app:iconTint="@color/white"
+                    app:layout_constraintStart_toEndOf="@+id/btnWay"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_weight="1"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
