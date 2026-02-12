@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppAlertaPrevencionComunitaria" >
         <activity
+            android:name=".Activity_AlertaActiv"
+            android:exported="false" />
+        <activity
             android:name=".ActivityMuroSeguridad"
             android:exported="false" />
         <activity
