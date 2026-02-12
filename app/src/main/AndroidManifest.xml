@@ -11,15 +11,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppAlertaPrevencionComunitaria" >
+
         <activity
             android:name=".Activity_AlertaActiv"
             android:exported="false" />
         <activity
             android:name=".ActivityMuroSeguridad"
             android:exported="false" />
+
         <activity
             android:name=".ActivityPanico"
             android:exported="false" />
+
         <activity
             android:name=".ActivityRecuperarClave"
             android:exported="false" />
@@ -29,12 +32,12 @@
         <activity
             android:name=".ActivityIniciarSesion"
             android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

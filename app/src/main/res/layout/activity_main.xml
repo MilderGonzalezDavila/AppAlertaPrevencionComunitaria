@@ -149,16 +149,5 @@
                 style="@style/EstiloBotonPrimario"
                 android:textAllCaps="false"/>
         </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="v1.0 Confianza y Seguridad"
-            android:layout_marginTop="10dp"
-            android:layout_gravity="center"
-            android:textColor="@color/gris_slate_500"
-            android:textSize="12sp"/>
-
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
