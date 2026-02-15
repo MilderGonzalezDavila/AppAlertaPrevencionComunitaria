@@ -4,11 +4,16 @@ import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
+import android.widget.Button;
+import android.widget.Toast;
+
+import ingenieriasistemas.mildergd.appalertaprevencioncomunitaria.db.Repositorio;
+import ingenieriasistemas.mildergd.appalertaprevencioncomunitaria.modelos.Usuario;
 
 public class MainActivity extends AppCompatActivity {
+
+    private Repositorio repositorio;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,4 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
     }
+
+
+
 }

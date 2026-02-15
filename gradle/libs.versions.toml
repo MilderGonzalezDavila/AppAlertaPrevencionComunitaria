@@ -9,6 +9,14 @@ activity = "1.12.2"
 constraintlayout = "2.2.1"
 cardview = "1.0.0"
 recyclerview = "1.4.0"
+roomCommonJvm = "2.8.4"
+
+firebaseBom = "32.7.0"
+roomRuntime = "2.8.4"
+roomCompiler = "2.8.4"
+
+gson = "2.10.1"
+
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -20,6 +28,18 @@ activity = { group = "androidx.activity", name = "activity", version.ref = "acti
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 cardview = { group = "androidx.cardview", name = "cardview", version.ref = "cardview" }
 recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
+room-common-jvm = { group = "androidx.room", name = "room-common-jvm", version.ref = "roomCommonJvm" }
+
+firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBom" }
+firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore" }
+firebase-storage = { group = "com.google.firebase", name = "firebase-storage" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth" }
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "roomRuntime" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "roomCompiler" }
+
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
