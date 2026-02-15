@@ -136,12 +136,12 @@
                 android:src="@drawable/ic_camera"
                 app:tint="@color/gris_slate_500" />
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_marginStart="20dp"
-                android:src="@drawable/ic_microfono"
-                app:tint="@color/gris_slate_500" />
+<!--            <ImageView-->
+<!--                android:layout_width="24dp"-->
+<!--                android:layout_height="24dp"-->
+<!--                android:layout_marginStart="20dp"-->
+<!--                android:src="@drawable/ic_microfono"-->
+<!--                app:tint="@color/gris_slate_500" />-->
 
             <ImageView
                 android:layout_width="24dp"
@@ -267,13 +267,13 @@
         </LinearLayout>
       </HorizontalScrollView>
 
-      <androidx.recyclerview.widget.RecyclerView
-          android:id="@+id/rvFeedPublicaciones"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:nestedScrollingEnabled="false"
-          tools:itemCount="3"
-          tools:listitem="@layout/item_post" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFeedPublicaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            tools:itemCount="3"
+            tools:listitem="@layout/item_post" />
 
     </LinearLayout>
   </androidx.core.widget.NestedScrollView>
